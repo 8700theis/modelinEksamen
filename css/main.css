@@ -16,3 +16,61 @@ a,
 p,
 span {
   font-family: 'Mukta', sans-serif; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 145px; }
+  .nav_logoContainer {
+    display: inline-block;
+    width: 300px; }
+    .nav_logoContainer img {
+      width: 100%;
+      height: auto; }
+  .nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav_list_item {
+      margin: 0 10px; }
+      .nav_list_item_link {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+        font-family: 'Lexend Deca', sans-serif;
+        transition: all 250ms ease; }
+        .nav_list_item_link:hover {
+          color: #4d4d4d; }
+        .nav_list_item_link_img {
+          width: 25px;
+          height: 25px;
+          transition: all 250ms ease; }
+          .nav_list_item_link_img:hover {
+            scale: 1.1; }
+
+.landing {
+  position: relative;
+  margin-top: 145px; }
+  .landing_imageContainer {
+    height: calc(100vh - 145px);
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .landing_imageContainer_img {
+      height: 100%;
+      width: auto; }
+
+@media (min-width: 1640px) {
+  .container {
+    max-width: 1500px;
+    position: relative;
+    left: 50px; } }

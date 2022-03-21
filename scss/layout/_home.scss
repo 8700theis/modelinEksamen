@@ -1,0 +1,61 @@
+//############################# Top Navigation ############################
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: color(White);
+    width: 100%;
+    @include flexPosition(space-between, center);
+    padding: 0 20px;
+    height: 145px;
+    &_logoContainer {
+        display: inline-block;
+        width: 300px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &_list {
+        list-style: none;
+        @include flexPosition(center, center);
+        &_item {
+            margin: 0 10px;
+            &_link {
+                text-decoration: none;
+                color: color(Black);
+                font-size: 18px;
+                font-family: 'Lexend Deca', sans-serif;
+                transition: all 250ms ease;
+                &:hover {
+                    color: lighten(color(Black), 30%);
+                }
+                &_img {
+                    width: 25px;
+                    height: 25px;
+                    transition: all 250ms ease;
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//########################## Landing Page #################################
+.landing {
+    position: relative;
+    margin-top: 145px;
+    &_imageContainer {
+        height: calc(100vh - 145px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        &_img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
