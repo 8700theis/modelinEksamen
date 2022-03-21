@@ -1,5 +1,5 @@
 //Variables
-$colors: ( primary: #333, secondary: #ffe, third: #f2f0f1, fourth: #f5b149, greenBtn: #5eba7d);
+$colors: ( White: #FFFFFF, Black: #000000, Grey: #DDDDDD, light: #F3F3f3, Blue: #0011FF);
 @function color($color-name) {
     @return map-get($colors, $color-name);
 }
