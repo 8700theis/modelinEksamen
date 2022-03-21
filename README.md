@@ -1,2 +1,0 @@
-# modelinEksamen
-Prøveeksamen
