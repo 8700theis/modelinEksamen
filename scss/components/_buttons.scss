@@ -1,0 +1,19 @@
+.button {
+    font-size: 16px;
+    position: relative;
+    border: 1px solid color(Black);
+    text-decoration: none;
+    color: color(Black);
+    width: 138px;
+    span {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 0;
+        transition: width 0.3s ease-out;
+        &:hover {
+            width: 100%;
+        }
+    }
+}

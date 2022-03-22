@@ -48,6 +48,7 @@
 .landing {
     position: relative;
     margin-top: 145px;
+    height: calc(100vh - 145px);
     &_imageContainer {
         height: calc(100vh - 145px);
         position: absolute;
@@ -56,6 +57,29 @@
         &_img {
             height: 100%;
             width: auto;
+        }
+    }
+    .container {
+        height: 100%;
+        .row {
+            height: 100%;
+            .col-md-5 {
+                height: 100%;
+                @include flexPosition(flex-start, center);
+                .landing_textWrapper {
+                    background-color: color(White);
+                    padding: 25px 35px 25px 0;
+                    &_heading {
+                        font-size: 54px;
+                        font-weight: 400;
+                    }
+                    &_text {
+                        font-size: 14px;
+                        white-space: nowrap;
+                        margin: 20px 0;
+                    }
+                }
+            }
         }
     }
 }

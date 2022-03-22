@@ -17,6 +17,23 @@ p,
 span {
   font-family: 'Mukta', sans-serif; }
 
+.button {
+  font-size: 16px;
+  position: relative;
+  border: 1px solid #000000;
+  text-decoration: none;
+  color: #000000;
+  width: 138px; }
+  .button span {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 0;
+    transition: width 0.3s ease-out; }
+    .button span:hover {
+      width: 100%; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -59,7 +76,8 @@ span {
 
 .landing {
   position: relative;
-  margin-top: 145px; }
+  margin-top: 145px;
+  height: calc(100vh - 145px); }
   .landing_imageContainer {
     height: calc(100vh - 145px);
     position: absolute;
@@ -68,6 +86,25 @@ span {
     .landing_imageContainer_img {
       height: 100%;
       width: auto; }
+  .landing .container {
+    height: 100%; }
+    .landing .container .row {
+      height: 100%; }
+      .landing .container .row .col-md-5 {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .landing .container .row .col-md-5 .landing_textWrapper {
+          background-color: #FFFFFF;
+          padding: 25px 35px 25px 0; }
+          .landing .container .row .col-md-5 .landing_textWrapper_heading {
+            font-size: 54px;
+            font-weight: 400; }
+          .landing .container .row .col-md-5 .landing_textWrapper_text {
+            font-size: 14px;
+            white-space: nowrap;
+            margin: 20px 0; }
 
 @media (min-width: 1640px) {
   .container {
