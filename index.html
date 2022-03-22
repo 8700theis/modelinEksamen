@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
 
     <!-- JavaScript -->
-    <script src="js/script.js" defer></script>
+    <script type="module" src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -54,6 +54,7 @@
     </nav>
     <!-- Navigation End -->
 
+    <!-- Landing page Start -->
     <header class="landing">
         <div class="landing_imageContainer">
             <img class="landing_imageContainer_img" src="images/LandingPageIMG.jpg" alt="Background image">
@@ -62,19 +63,67 @@
             <div class="row">
                 <div class="col-md-5">
                     <section class="landing_textWrapper">
-                        <!-- Hent med API -->
+
                         <h1 class="landing_textWrapper_heading">
-                            Modern elegant and luxurios interior
+                            <!-- Hentet med API -->
                         </h1>
                         <p class="landing_textWrapper_text">
                             Individual approach to the design of private apartments and public areas
                         </p>
-                        <a class="landing_textWrapper_button button" href="#">Portfolio <span>Portfolio</span></a>
+                        <a class="landing_textWrapper_button button" href="#">
+                            <div class="button front"><span>Portfolio</span></div>
+                            <div class="button back"><span>Portfolio</span></div>
+                        </a>
                     </section>
                 </div>
             </div>
         </div>
     </header>
+    <!-- Landing page End -->
+
+    <!-- About short text Start -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about_short_top">
+                        <p class="about_short_top_text">Offering you a full range of interior and furniture design services.</p>
+                    </div>
+                    <div class="about_short_buttom">
+                        <div class="about_short_buttom_first">
+                            <p class="about_short_buttom_first_text">Alexander Westham</p>
+                            <p class="about_short_buttom_first_text">Interior Designer</p>
+                        </div>
+                        <div class="about_short_buttom_secound">
+                            <p class="about_short_buttom_secound_text">
+                                Experience of over 10 years of successful projects on creating unique and modern interior designs all over the world.
+                            </p>
+                        </div>
+                        <a class="button" href="#">
+                            <div class="button front"><span>About Me</span></div>
+                            <div class="button back"><span>About Me</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About short text End -->
+
+    <!-- Recent Projects Start -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="projects_heading">Recent projects</h2>
+                    <div class="projects_container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Projects End -->
 </body>
 
 </html>

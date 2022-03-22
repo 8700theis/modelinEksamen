@@ -8,7 +8,7 @@
     width: 100%;
     @include flexPosition(space-between, center);
     padding: 0 20px;
-    height: 145px;
+    height: 125px;
     &_logoContainer {
         display: inline-block;
         width: 300px;
@@ -47,10 +47,10 @@
 //########################## Landing Page #################################
 .landing {
     position: relative;
-    margin-top: 145px;
-    height: calc(100vh - 145px);
+    margin-top: 125px;
+    height: calc(100vh - 125px);
     &_imageContainer {
-        height: calc(100vh - 145px);
+        height: calc(100vh - 125px);
         position: absolute;
         top: 0;
         right: 0;
@@ -77,6 +77,46 @@
                         font-size: 14px;
                         white-space: nowrap;
                         margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//########################## About short text #################################
+#about {
+    width: 100%;
+    background-color: color(Grey);
+    padding: 75px 0;
+    .container {
+        .row {
+            .col-md-12 {
+                .about_short_top {
+                    width: 300px;
+                    margin-bottom: 100px;
+                    &_text {
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                }
+                .about_short_buttom {
+                    @include flexPosition(flex-start, flex-start);
+                    &_first {
+                        margin-right: 30px;
+                        &_text {
+                            font-size: 14px;
+                        }
+                    }
+                    &_secound {
+                        width: 550px;
+                        margin-right: 30px;
+                        &_text {
+                            font-size: 14px;
+                        }
+                    }
+                    .button {
+                        margin-top: 10px;
                     }
                 }
             }

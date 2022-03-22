@@ -1,19 +1,32 @@
 .button {
     font-size: 16px;
     position: relative;
-    border: 1px solid color(Black);
     text-decoration: none;
     color: color(Black);
     width: 138px;
-    span {
-        position: relative;
+    height: 40px;
+    display: inline-block;
+    &:hover .button.back {
+        width: 100%;
+    }
+    &.front {
+        width: 100%;
+        height: 100%;
+        background-color: color(White);
+        border: 1px solid color(Black);
+        @include flexPosition(center, center);
+    }
+    &.back {
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 10;
-        width: 0;
-        transition: width 0.3s ease-out;
-        &:hover {
-            width: 100%;
-        }
+        background-color: color(Black);
+        color: color(White);
+        width: 0%;
+        overflow: hidden;
+        white-space: nowrap;
+        @include flexPosition(center, center);
+        transition: all 200ms ease-out;
     }
 }
