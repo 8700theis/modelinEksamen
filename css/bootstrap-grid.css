@@ -21,7 +21,9 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    position: relative;
+    left: 75px;
 }
 
 @media (min-width:576px) {
@@ -44,7 +46,7 @@ html {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1300px;
     }
 }
 

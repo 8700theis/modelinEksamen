@@ -148,8 +148,172 @@ span {
     #about .container .row .col-md-12 .about_short_buttom .button {
       margin-top: 10px; }
 
-@media (min-width: 1640px) {
-  .container {
-    max-width: 1500px;
-    position: relative;
-    left: 10px; } }
+#projects {
+  padding: 100px 0; }
+  #projects .container .row .col-md-12 .projects_heading {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 40px; }
+  #projects .container .row .col-md-12 .projects_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    #projects .container .row .col-md-12 .projects_container_wrapper {
+      width: 305px; }
+      #projects .container .row .col-md-12 .projects_container_wrapper_imageCon {
+        width: 100%;
+        height: 305px;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        border: 1px solid #000000; }
+        #projects .container .row .col-md-12 .projects_container_wrapper_imageCon img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }
+        #projects .container .row .col-md-12 .projects_container_wrapper_imageCon_overlayOuter {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #FFFFFF;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #000000;
+          transition: all 250ms ease-in; }
+          #projects .container .row .col-md-12 .projects_container_wrapper_imageCon_overlayOuter:hover {
+            opacity: 0.85; }
+          #projects .container .row .col-md-12 .projects_container_wrapper_imageCon_overlayOuter_overlayInner {
+            width: calc(100% - (17px * 2));
+            height: calc(100% - (17px * 2));
+            border: 1px solid #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px; }
+            #projects .container .row .col-md-12 .projects_container_wrapper_imageCon_overlayOuter_overlayInner_title {
+              font-size: 22px;
+              text-align: center;
+              font-weight: 400; }
+      #projects .container .row .col-md-12 .projects_container_wrapper_likesCon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px; }
+        #projects .container .row .col-md-12 .projects_container_wrapper_likesCon_text {
+          font-size: 14px; }
+          #projects .container .row .col-md-12 .projects_container_wrapper_likesCon_text span {
+            text-decoration: underline;
+            color: #0011FF; }
+        #projects .container .row .col-md-12 .projects_container_wrapper_likesCon img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          transition: all 250ms ease; }
+          #projects .container .row .col-md-12 .projects_container_wrapper_likesCon img:hover {
+            scale: 1.1; }
+  #projects .container .row .col-md-12 .button {
+    margin-top: 20px; }
+
+#services {
+  padding-bottom: 100px; }
+  #services .container .row .col-md-9 .services_heading {
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.246); }
+  #services .container .row .col-md-9 .services_accordianCon_singleCon {
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.246); }
+    #services .container .row .col-md-9 .services_accordianCon_singleCon_topCon {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #services .container .row .col-md-9 .services_accordianCon_singleCon_topCon_heading {
+        font-size: 26px;
+        font-weight: 400; }
+      #services .container .row .col-md-9 .services_accordianCon_singleCon_topCon_imgCon {
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+        transition: transform 0.3s; }
+        #services .container .row .col-md-9 .services_accordianCon_singleCon_topCon_imgCon img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    #services .container .row .col-md-9 .services_accordianCon_singleCon_textCon {
+      width: 100%;
+      height: 0%;
+      transition: all 0.3s ease-in-out; }
+      #services .container .row .col-md-9 .services_accordianCon_singleCon_textCon_text {
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+        margin: 30px 50px 30px 75px;
+        transition: all 250ms ease-in-out; }
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important; }
+
+#footer .footer_top .container .row .col-md-12 .footer_top_heading {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 50px; }
+
+#footer .footer_middle {
+  background-color: #DDDDDD;
+  padding: 40px 0; }
+  #footer .footer_middle .container .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    #footer .footer_middle .container .row .col-md-5 .footer_middle_mail {
+      text-decoration: none;
+      color: #000000;
+      font-size: 26px; }
+    #footer .footer_middle .container .row .col-md-4 .footer_middle_text {
+      font-size: 14px; }
+
+#footer .footer_bottom {
+  background-color: #000000;
+  padding: 75px 0 100px; }
+  #footer .footer_bottom .container .row .col-md-5 .footer_bottom_textCon_text {
+    color: #FFFFFF;
+    font-size: 14px; }
+  #footer .footer_bottom .container .row .col-md-5 .footer_bottom_textCon_list {
+    list-style: none; }
+    #footer .footer_bottom .container .row .col-md-5 .footer_bottom_textCon_list_item_link {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.2s; }
+      #footer .footer_bottom .container .row .col-md-5 .footer_bottom_textCon_list_item_link:hover::after {
+        left: -20px;
+        width: 10px; }
+      #footer .footer_bottom .container .row .col-md-5 .footer_bottom_textCon_list_item_link::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        width: 0px;
+        height: 3px;
+        background-color: #FFFFFF;
+        transition: all 0.2s; }
+  #footer .footer_bottom .container .row .col-md-2 .footer_bottom_textCon {
+    display: flex;
+    flex-direction: column; }
+    #footer .footer_bottom .container .row .col-md-2 .footer_bottom_textCon_social {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 14px; }
