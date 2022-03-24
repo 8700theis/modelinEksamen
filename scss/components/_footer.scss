@@ -1,0 +1,90 @@
+//################################ Footer #############################################
+#footer {
+    .footer_top {
+        .container {
+            .row {
+                .col-md-12 {
+                    .footer_top_heading {
+                        font-size: 45px;
+                        font-weight: 400;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .footer_middle {
+        background-color: color(Grey);
+        padding: 40px 0;
+        .container {
+            .row {
+                @include flexPosition(flex-start);
+                .col-md-5 {
+                    .footer_middle_mail {
+                        text-decoration: none;
+                        color: color(Black);
+                        font-size: 26px;
+                    }
+                }
+                .col-md-4 {
+                    .footer_middle_text {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom {
+        background-color: color(Black);
+        padding: 75px 0 100px;
+        .container {
+            .row {
+                .col-md-5 {
+                    .footer_bottom_textCon {
+                        &_text {
+                            color: color(White);
+                            font-size: 14px;
+                        }
+                        &_list {
+                            list-style: none;
+                            &_item {
+                                &_link {
+                                    text-decoration: none;
+                                    color: color(White);
+                                    font-size: 14px;
+                                    position: relative;
+                                    transition: all 0.2s;
+                                    &:hover::after {
+                                        left: -20px;
+                                        width: 10px;
+                                    }
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -10px;
+                                        width: 0px;
+                                        height: 3px;
+                                        background-color: color(White);
+                                        transition: all 0.2s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-md-2 {
+                    .footer_bottom_textCon {
+                        display: flex;
+                        flex-direction: column;
+                        &_social {
+                            text-decoration: none;
+                            color: color(White);
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

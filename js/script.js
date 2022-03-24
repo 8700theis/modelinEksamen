@@ -1,12 +1,24 @@
-//Importing Javascript Components
+//Importing Javascript Components and Templates
+import navigationTemplate from './templates/navigation.js';
+import footerTemplate from './templates/footer.js';
 import FetchMyData from './components/FetchMyData.js';
 
+//Getting elements for templating
+const navElement = document.querySelector('.nav');
+const footerElement = document.querySelector('#footer');
+
+//Inserting templates
+navElement.insertAdjacentHTML('beforeend', navigationTemplate);
+footerElement.insertAdjacentHTML('beforeend', footerTemplate);
+
+//Getting elements for later use
 const landingHeader = document.querySelector('.landing_textWrapper_heading');
 const recentProjectsContainer = document.querySelector('.projects_container');
 const accordionPlusImages = document.querySelectorAll('.services_accordianCon_singleCon_topCon_imgCon');
 const footerMail = document.querySelector('.footer_middle_mail');
 const footerMiddleText = document.querySelector('.footer_middle_text');
 const footerBottomText = document.querySelector('.footer_bottom_textCon_text');
+
 
 let portfolioObjectsArray = [{
         title: 'Hotel lounge with Veranda',
