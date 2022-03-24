@@ -16,7 +16,8 @@ const footerMail = document.querySelector('.footer_middle_mail');
 const footerMiddleText = document.querySelector('.footer_middle_text');
 const footerBottomText = document.querySelector('.footer_bottom_textCon_text');
 
-const galleryImagesImgElements = document.querySelectorAll('.gallery_imageCon_singleCon_img');
+const galleryImagesAElements = document.querySelectorAll('.gallery_imageCon_column_link');
+const galleryImagesImgElements = document.querySelectorAll('.gallery_imageCon_column_link_img');
 
 //Getting the portfolio parameter
 var url_string = window.location.href;
@@ -129,5 +130,6 @@ imagesFetch.then((images) => {
     }
     galleryImagesArray.forEach((image, index) => {
         galleryImagesImgElements[index].src = image;
+        galleryImagesAElements[index].href = image;
     });
 });
