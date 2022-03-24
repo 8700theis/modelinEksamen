@@ -1,13 +1,32 @@
-const navigationTemplate =
-    `<a class="nav_logoContainer" href="#">
+const iconArray = [];
+
+const checkIfGallery = () => {
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var gallery = url.searchParams.get("gallery");
+    if (gallery) {
+        iconArray.push('images/icons/instagram_white.png');
+        iconArray.push('images/icons/home_white.png');
+        console.log(iconArray);
+    } else {
+        iconArray.push('images/icons/instagram.png');
+        iconArray.push('images/icons/home.png');
+        console.log(iconArray);
+    }
+}
+
+checkIfGallery();
+
+const navigationTemplate = () =>
+    `<a class="nav_logoContainer" href="/">
             <img src="images/logo/logo-modelin.svg" alt="modelin logo">
         </a>
         <ul class="nav_list">
             <li class="nav_list_item">
-                <a href="#" class="nav_list_item_link">Home</a>
+                <a href="/" class="nav_list_item_link">Home</a>
             </li>
             <li class="nav_list_item">
-                <a href="#" class="nav_list_item_link">Portfolio</a>
+                <a href="portfolio.html" class="nav_list_item_link">Portfolio</a>
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">Services & Prices</a>
@@ -20,12 +39,12 @@ const navigationTemplate =
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">
-                    <img src="images/icons/instagram.png" alt="Instagram icon" class="nav_list_item_link_img">
+                    <img src="${iconArray[0]}" alt="Instagram icon" class="nav_list_item_link_img">
                 </a href="#" class="nav_list_item_link">
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">
-                    <img src="images/icons/home.png" alt="Home icon" class="nav_list_item_link_img">
+                    <img src="${iconArray[1]}" alt="Home icon" class="nav_list_item_link_img">
                 </a href="#" class="nav_list_item_link">
             </li>
 </ul>`;

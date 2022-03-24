@@ -29,6 +29,10 @@ span {
   align-items: center;
   padding: 0 20px;
   height: 125px; }
+  .nav.gallery {
+    background-color: transparent !important; }
+    .nav.gallery .nav_list_item_link {
+      color: #FFFFFF; }
   .nav_logoContainer {
     display: inline-block;
     width: 300px; }

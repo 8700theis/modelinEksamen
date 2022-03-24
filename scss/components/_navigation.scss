@@ -9,6 +9,12 @@
     @include flexPosition(space-between, center);
     padding: 0 20px;
     height: 125px;
+    &.gallery {
+        background-color: transparent !important;
+        .nav_list_item_link {
+            color: color(White);
+        }
+    }
     &_logoContainer {
         display: inline-block;
         width: 300px;

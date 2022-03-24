@@ -8,7 +8,7 @@ const navElement = document.querySelector('.nav');
 const footerElement = document.querySelector('#footer');
 
 //Inserting templates
-navElement.insertAdjacentHTML('beforeend', navigationTemplate);
+navElement.insertAdjacentHTML('beforeend', navigationTemplate());
 footerElement.insertAdjacentHTML('beforeend', footerTemplate);
 
 //Getting elements for later use
@@ -24,25 +24,25 @@ let portfolioObjectsArray = [{
         title: 'Hotel lounge with Veranda',
         img: '../images/PortfolioIMG_01.jpg',
         likes: 1029,
-        linkPath: '../HTML/projects/projectHotelLounge.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=hotellounge'
     },
     {
         title: 'Bedroom in a classic style',
         img: '../images/PortfolioIMG_02.jpg',
         likes: 253,
-        linkPath: '../HTML/projects/projectBedroomClassic.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=bedroom'
     },
     {
         title: 'Web Design Studio Lounge',
         img: '../images/PortfolioIMG_03.jpg',
         likes: 178,
-        linkPath: '../HTML/projects/projectWebStudio.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=webdesign'
     },
     {
         title: 'Living Room Design in Bright Colors',
         img: '../images/PortfolioIMG_04.jpg',
         likes: 2312,
-        linkPath: '../HTML/projects/projectLivingRoom.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=livingroom'
     },
 ]
 

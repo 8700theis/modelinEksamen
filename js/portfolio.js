@@ -9,7 +9,7 @@ const navElement = document.querySelector('.nav');
 const footerElement = document.querySelector('#footer');
 
 //Inserting templates
-navElement.insertAdjacentHTML('beforeend', navigationTemplate);
+navElement.insertAdjacentHTML('beforeend', navigationTemplate());
 footerElement.insertAdjacentHTML('beforeend', footerTemplate);
 const footerMail = document.querySelector('.footer_middle_mail');
 const footerMiddleText = document.querySelector('.footer_middle_text');
@@ -21,32 +21,32 @@ const protfolioImgContainer = document.querySelector('.portfolioCon');
 let portfolioObjectsArray = [{
         title: 'Hotel lounge with Veranda',
         img: '../images/PortfolioIMG_01.jpg',
-        linkPath: '../HTML/projects/projectHotelLounge.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=hotellounge'
     },
     {
         title: 'Bedroom in a classic style',
         img: '../images/PortfolioIMG_02.jpg',
-        linkPath: '../HTML/projects/projectBedroomClassic.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=bedroom'
     },
     {
         title: 'Web Design Studio Lounge',
         img: '../images/PortfolioIMG_03.jpg',
-        linkPath: '../HTML/projects/projectWebStudio.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=webdesign'
     },
     {
         title: 'Living Room Design in Bright Colors',
         img: '../images/PortfolioIMG_04.jpg',
-        linkPath: '../HTML/projects/projectLivingRoom.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=livingroom'
     },
     {
         title: 'Hotel lounge with Veranda',
         img: '../images/PortfolioIMG_01.jpg',
-        linkPath: '../HTML/projects/projectHotelLounge.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=hotellounge'
     },
     {
         title: 'Bedroom in a classic style',
         img: '../images/PortfolioIMG_02.jpg',
-        linkPath: '../HTML/projects/projectBedroomClassic.html'
+        linkPath: '../gallery.html?gallery=true&portfolio=bedroom'
     },
 ];
 
