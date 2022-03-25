@@ -1,0 +1,85 @@
+#services {
+    margin: 225px 0 100px;
+    .container {
+        width: 100%;
+        .row {
+            width: 100%;
+            position: relative;
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
+            .col-md-12 {
+                width: 100%;
+                position: relative;
+                left: 15%;
+                .services_headingCon {
+                    width: 600px;
+                    margin-bottom: 40px;
+                    &_heading {
+                        font-size: 54px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    &_text {
+                        font-size: 14px;
+                    }
+                }
+                .services_contentCon {
+                    width: 100%;
+                    @include flexPosition(flex-start, center);
+                    &:nth-child(odd) {
+                        flex-direction: row-reverse;
+                    }
+                    &_imgCon {
+                        width: 600px;
+                        &_img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &_textCon {
+                        width: calc(100% - 600px);
+                        &.paddingLeft {
+                            padding-left: 50px;
+                        }
+                        &:nth-child(even) {
+                            padding-right: 50px;
+                        }
+                        &_heading {
+                            font-size: 45px;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+                        &_subheadingCon {
+                            @include flexPosition(flex-start, center);
+                            margin-bottom: 20px;
+                            &_text {
+                                font-size: 14px;
+                                font-weight: 700;
+                                margin-right: 20px;
+                            }
+                        }
+                        &_maintextCon {
+                            &_text {
+                                font-size: 14px;
+                                margin-bottom: 20px;
+                            }
+                            &_list {
+                                margin-left: 20px;
+                                &_item {
+                                    font-size: 14px;
+                                    font-family: 'Mukta', sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-9 {
+                .services_accordianCon {
+                    border-top: 1px solid rgba(0, 0, 0, 0.246);
+                }
+            }
+        }
+    }
+}

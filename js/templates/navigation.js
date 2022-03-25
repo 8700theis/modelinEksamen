@@ -7,11 +7,9 @@ const checkIfGallery = () => {
     if (gallery) {
         iconArray.push('images/icons/instagram_white.png');
         iconArray.push('images/icons/home_white.png');
-        console.log(iconArray);
     } else {
         iconArray.push('images/icons/instagram.png');
         iconArray.push('images/icons/home.png');
-        console.log(iconArray);
     }
 }
 
@@ -32,7 +30,7 @@ const navigationTemplate = () =>
                 <a href="services.html" class="nav_list_item_link">Services & Prices</a>
             </li>
             <li class="nav_list_item">
-                <a href="#" class="nav_list_item_link">About Me</a>
+                <a href="about.html?about=true" class="nav_list_item_link">About Me</a>
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">Contact</a>
