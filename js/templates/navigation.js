@@ -33,7 +33,7 @@ const navigationTemplate = () =>
                 <a href="about.html?about=true" class="nav_list_item_link">About Me</a>
             </li>
             <li class="nav_list_item">
-                <a href="#" class="nav_list_item_link">Contact</a>
+                <a href="contact.html" class="nav_list_item_link">Contact</a>
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">

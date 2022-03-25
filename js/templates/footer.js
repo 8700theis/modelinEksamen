@@ -1,39 +1,39 @@
-import FetchMyData from '../components/FetchMyData.js';
-
-let footerMail = '';
-let footerMiddleText = '';
-let footerBottomText = '';
-
-//Fetching all texts
-const textsFetch = FetchMyData({ Endpoint: "texts" });
-textsFetch.then((texts) => {
-    footerMail = texts[2].description;
-    let footerTextArray = texts[3].description.split(/(©)/);
-    footerMiddleText = footerTextArray[0];
-    footerBottomText = footerTextArray[1] + footerTextArray[2];
-
-});
-
-
 const notOnAboutTemplate =
     `
 <div class="col-md-5">
-    <a class="footer_middle_mail" href="mailto:${footerMail}">${footerMail}</a>
+    <a class="footer_middle_mail" href=""></a>
 </div>
 <div class="col-md-4">
-    <p class="footer_middle_text">${footerMiddleText}</p>
+    <p class="footer_middle_text"></p>
 </div>
 `;
 
 const onAboutTemplate =
     `
-<div class="col-md-9">
-    <h3 class="footer_middle_heading"></h3>
-    <p class="footer_middle_text"></p>
+<div class="col-md-8">
+    <h3 class="footer_middle_heading">
+        In my projects I strive to create a perfect interior for you. I often ask about your habits, preferences, hobbies, and other activities.
+    </h3>
+    <p class="footer_middle_text">
+        I believe that personal approach is the only way that helps to create houses, offices, open spaces, that contain everything you need and meet your expectations. 
+    </p>
     <a class="footer_middle_button button" href="portfolio.html">
         <div class="button front"><span>Portfolio</span></div>
         <div class="button back"><span>Portfolio</span></div>
     </a>
+</div>
+`;
+
+const footerTopSection =
+    `
+<div class="footer_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="footer_top_heading">Need more details?</h2>
+            </div>
+        </div>
+    </div>
 </div>
 `;
 
@@ -48,17 +48,20 @@ const checkIfOnAboutPage = () => {
     }
 }
 
+const checkIfOnAboutPageForFooterTop = () => {
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var about = url.searchParams.get("about");
+    if (about) {
+        return '';
+    } else {
+        return footerTopSection;
+    }
+}
 
-const footerTemplate = `
-<div class="footer_top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="footer_top_heading">Need more details?</h2>
-            </div>
-        </div>
-    </div>
-</div>
+const footerTemplate =
+    `
+${checkIfOnAboutPageForFooterTop()}
 <div class="footer_middle">
     <div class="container">
         <div class="row">
@@ -71,7 +74,7 @@ const footerTemplate = `
         <div class="row">
             <div class="col-md-5">
                 <div class="footer_bottom_textCon">
-                    <p class="footer_bottom_textCon_text">${footerBottomText}</p>
+                    <p class="footer_bottom_textCon_text"></p>
                 </div>
             </div>
             <div class="col-md-5">

@@ -15,6 +15,9 @@ footerElement.insertAdjacentHTML('beforeend', footerTemplate);
 
 const galleryImagesAElements = document.querySelectorAll('.gallery_imageCon_column_link');
 const galleryImagesImgElements = document.querySelectorAll('.gallery_imageCon_column_link_img');
+const footerMail = document.querySelector('.footer_middle_mail');
+const footerMiddleText = document.querySelector('.footer_middle_text');
+const footerBottomText = document.querySelector('.footer_bottom_textCon_text');
 
 //Getting the portfolio parameter
 var url_string = window.location.href;
@@ -68,6 +71,10 @@ const insertGalleryData = (galleryHeading, galleryText) => {
 const textsFetch = FetchMyData({ Endpoint: "texts" });
 textsFetch.then((texts) => {
     console.log(texts);
+    footerMail.innerText = texts[2].description;
+    let footerTextArray = texts[3].description.split(/(©)/);
+    footerMiddleText.innerText = footerTextArray[0];
+    footerBottomText.innerText = footerTextArray[1] + footerTextArray[2];
 
     //Hotel values
     const hotelHeading = texts[5].description;

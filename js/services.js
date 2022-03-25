@@ -12,6 +12,9 @@ navElement.insertAdjacentHTML('beforeend', navigationTemplate());
 footerElement.insertAdjacentHTML('beforeend', footerTemplate);
 
 //getting all alements for later use
+const footerMail = document.querySelector('.footer_middle_mail');
+const footerMiddleText = document.querySelector('.footer_middle_text');
+const footerBottomText = document.querySelector('.footer_bottom_textCon_text');
 const servicesHeading = document.querySelector('.services_headingCon_heading');
 const servicesHeadingText = document.querySelector('.services_headingCon_text');
 const servicesImageElements = document.querySelectorAll('.services_contentCon_imgCon_img');
@@ -38,6 +41,10 @@ accordionPlusImages.forEach((image) => {
 const textsFetch = FetchMyData({ Endpoint: "texts" });
 textsFetch.then((texts) => {
     console.log(texts);
+    footerMail.innerText = texts[2].description;
+    let footerTextArray = texts[3].description.split(/(©)/);
+    footerMiddleText.innerText = footerTextArray[0];
+    footerBottomText.innerText = footerTextArray[1] + footerTextArray[2];
 
     servicesHeading.innerHTML = texts[9].description;
     servicesHeadingText.innerHTML = texts[10].description;

@@ -128,9 +128,3 @@ textsFetch.then((texts) => {
     footerMiddleText.innerText = footerTextArray[0];
     footerBottomText.innerText = footerTextArray[1] + footerTextArray[2];
 });
-
-//Fetching all images
-const imagesFetch = FetchMyData({ Endpoint: "images" });
-imagesFetch.then((images) => {
-    console.log(images);
-});
