@@ -29,7 +29,7 @@ const navigationTemplate = () =>
                 <a href="portfolio.html" class="nav_list_item_link">Portfolio</a>
             </li>
             <li class="nav_list_item">
-                <a href="#" class="nav_list_item_link">Services & Prices</a>
+                <a href="services.html" class="nav_list_item_link">Services & Prices</a>
             </li>
             <li class="nav_list_item">
                 <a href="#" class="nav_list_item_link">About Me</a>
