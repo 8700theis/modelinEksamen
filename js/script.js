@@ -106,12 +106,12 @@ accordionPlusImages.forEach((image) => {
         if (e.target.classList.contains('rotateImg')) {
             e.target.classList.remove('rotateImg');
             e.target.style.transform = 'rotate(0deg)';
-            e.target.parentElement.parentElement.nextElementSibling.style.height = '0%';
+            e.target.parentElement.parentElement.nextElementSibling.firstElementChild.style.animationName = 'fouldIn';
             e.target.parentElement.parentElement.nextElementSibling.firstElementChild.classList.remove('show');
         } else {
             e.target.classList.add('rotateImg');
             e.target.style.transform = 'rotate(45deg)';
-            e.target.parentElement.parentElement.nextElementSibling.style.height = '100%';
+            e.target.parentElement.parentElement.nextElementSibling.firstElementChild.style.animationName = 'fouldOut';
             e.target.parentElement.parentElement.nextElementSibling.firstElementChild.classList.add('show');
         }
     });

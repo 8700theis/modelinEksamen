@@ -19,12 +19,6 @@ textsFetch.then((texts) => {
     footerBottomText.innerText = footerTextArray[1] + footerTextArray[2];
 });
 
-//Fetching all images
-const imagesFetch = FetchMyData({ Endpoint: "images" });
-imagesFetch.then((images) => {
-    console.log(images);
-});
-
 const validateForm = () => {
     let email = document.querySelector('#email');
     let message = document.querySelector('#message');

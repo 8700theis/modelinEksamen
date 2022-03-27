@@ -81,27 +81,27 @@ ${checkIfOnAboutPageForFooterTop()}
                 <div class="footer_bottom_textCon">
                     <ul class="footer_bottom_textCon_list">
                         <li class="footer_bottom_textCon_list_item">
-                            <a href="#" class="footer_bottom_textCon_list_item_link">
+                            <a href="/" class="footer_bottom_textCon_list_item_link">
                                 Home
                             </a>
                         </li>
                         <li class="footer_bottom_textCon_list_item">
-                            <a href="#" class="footer_bottom_textCon_list_item_link">
+                            <a href="portfolio.html" class="footer_bottom_textCon_list_item_link">
                                 Portfolio
                             </a>
                         </li>
                         <li class="footer_bottom_textCon_list_item">
-                            <a href="#" class="footer_bottom_textCon_list_item_link">
+                            <a href="services.html" class="footer_bottom_textCon_list_item_link">
                                 Services & Prices
                             </a>
                         </li>
                         <li class="footer_bottom_textCon_list_item">
-                            <a href="#" class="footer_bottom_textCon_list_item_link">
+                            <a href="about.html" class="footer_bottom_textCon_list_item_link">
                                 About Me
                             </a>
                         </li>
                         <li class="footer_bottom_textCon_list_item">
-                            <a href="#" class="footer_bottom_textCon_list_item_link">
+                            <a href="contact.html" class="footer_bottom_textCon_list_item_link">
                                 Contact
                             </a>
                         </li>

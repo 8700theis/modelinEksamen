@@ -163,28 +163,41 @@ textarea {
     .services_accordianCon_singleCon_topCon_imgCon {
       width: 21px;
       height: 21px;
-      cursor: pointer;
-      transition: transform 0.3s; }
+      cursor: pointer; }
       .services_accordianCon_singleCon_topCon_imgCon img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.3s; }
   .services_accordianCon_singleCon_textCon {
     width: 100%;
-    height: 0%;
-    transition: all 0.3s ease-in-out; }
+    animation-duration: 250ms;
+    animation-name: fouldOut; }
     .services_accordianCon_singleCon_textCon_text {
       font-size: 14px;
       opacity: 0;
       visibility: hidden;
       display: none;
       margin: 30px 50px 30px 75px;
-      transition: all 250ms ease-in-out; }
+      animation-duration: 250ms;
+      animation-name: fouldOut; }
 
 .show {
   opacity: 1 !important;
   visibility: visible !important;
   display: block !important; }
+
+@keyframes fouldOut {
+  from {
+    height: 0%; }
+  to {
+    height: 100%; } }
+
+@keyframes fouldIn {
+  from {
+    height: 100%; }
+  to {
+    height: 0%; } }
 
 #services {
   margin: 225px 0 100px; }
