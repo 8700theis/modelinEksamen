@@ -14,7 +14,9 @@ h6 {
 
 a,
 p,
-span {
+span,
+input,
+textarea {
   font-family: 'Mukta', sans-serif; }
 
 .nav {
@@ -175,3 +177,46 @@ span {
       width: 270px; }
       #contact .contact_bottom .container .row .col-md-6 .contact_bottom_textCon_text {
         font-size: 14px; }
+    #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%; }
+      #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper {
+        width: 100%;
+        position: relative; }
+        #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper input {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          margin-bottom: 10px;
+          outline: none;
+          border: 1px solid #000000; }
+          #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper input.valid {
+            border-color: #34ec1c; }
+          #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper input.unvalid {
+            border-color: #ec1c1c; }
+        #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          margin-bottom: 10px;
+          outline: none;
+          border: 1px solid #000000;
+          resize: none; }
+          #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper textarea.valid {
+            border-color: #34ec1c; }
+          #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper textarea.unvalid {
+            border-color: #ec1c1c; }
+        #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_wrapper img {
+          position: absolute;
+          width: 20px;
+          height: auto;
+          top: 12px;
+          right: 10px; }
+      #contact .contact_bottom .container .row .col-md-5 .contact_bottom_formCon_button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent; }
